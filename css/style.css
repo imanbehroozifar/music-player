@@ -87,12 +87,35 @@ h3 {
   background: #7ed0ec;
   border-radius: 5px;
   height: 100%;
-  width: 50%;
+  width: 0%;
   transition: width 0.1s linear;
+}
+.duration-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7px;
 }
 .play-controls{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
 }
